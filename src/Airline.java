@@ -28,25 +28,45 @@ public class Airline {
 		while ( i < flight.length && flight[i].getFlightNumber().compareTo(flightNumber) != 0) {i++;}
 		if(i == (flight.length)) {return null;}else{return flight[i];}
     }
+    public int findFlightPosition( String flightNumber) {
+		int i = 0;
+		while ( i < flight.length && flight[i].getFlightNumber().compareTo(flightNumber) != 0) {i++;}
+		if(i == (flight.length)) {return -1;}else{return i;}
+    }
 
     public Passenger findPassenger(String id ) {
 	    	int i = 0;
 	    	while ( i < passenger.length && passenger[i].getId().compareTo(id) != 0) {i++;}
 	    	if(i == (passenger.length)) {return null;}else{return passenger[i];}
     }
+    public int findPassengerPosition(String id ) {
+	    	int i = 0;
+	    	while ( i < passenger.length && passenger[i].getId().compareTo(id) != 0) {i++;}
+	    	if(i == (passenger.length)) {return -1;}else{return i;}
+	}
     
     public Luggage findLuggage(String id) {
 	    	int i = 0;
 	    	while ( i < luggage.length && luggage[i].getId().compareTo(id) != 0) {i++;}
 	    	if(i == (luggage.length)) {return null;}else{return luggage[i];}
     }
-
+    public int findLuggagePosition(String id) {
+	    	int i = 0;
+	    	while ( i < luggage.length && luggage[i].getId().compareTo(id) != 0) {i++;}
+	    	if(i == (luggage.length)) {return -1;}else{return i;}
+	}
+    public Airplane findAirplane(String id) {
+	    	int i = 0;
+	    	while ( i < airplane.length && airplane[i].getPlate().compareTo(id) != 0) {i++;}
+	    	if(i == (airplane.length)) {return null;}else{return airplane[i];}
+    }
     public void findStatusOfFlight(String flightNumber) {
-    	 	Flight f = findFlight(flightNumber); 	
+    	 	Flight f = findFlight(flightNumber);
         
     }
-    public void checkAirplaneAvaibility() {
-        // TODO implement here
+    public boolean checkAirplaneAvaibility(String plate) {
+        Airplane a = findAirplane(plate);
+        return a.isAvailable();
     }
 
   
