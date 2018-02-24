@@ -1,7 +1,9 @@
 
 import java.util.*;
+import java.io.*;
 
-public class BoardingPass {
+
+public class BoardingPass implements Serializable{
 
 
     private Passenger passenger;

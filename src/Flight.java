@@ -1,7 +1,7 @@
 
 import java.util.*;
-
-public class Flight {
+import java.io.*;
+public class Flight implements Serializable {
 
     
     private Airplane airplane;
@@ -15,6 +15,15 @@ public class Flight {
     private Date arrivalTime;
     
     //constructor 
+	public Flight(Airplane a, String flightNumber, Date departureTime, double duration, Airport destination, Airport origin) {
+		super();
+		this.airplane = a;
+		this.flightNumber = flightNumber;
+		this.departureTime = departureTime;
+		this.duration = duration;
+		this.destination = destination;
+	}
+	
 	public Flight(Airplane airplane, String flightNumber, Employee[] crew, String[] boardingpassID, Date departureTime,
 			double duration, Airport destination, Airport origin, Date arrivalTime) {
 		super();

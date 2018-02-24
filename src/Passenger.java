@@ -1,7 +1,8 @@
 
 import java.util.*;
+import java.io.*;
 
-public class Passenger extends Person {
+public class Passenger extends Person implements Serializable{
 
     private BoardingPass[] boardingPass;
     

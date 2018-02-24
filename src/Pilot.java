@@ -1,10 +1,10 @@
 
 import java.util.*;
-
+import java.io.*;
 /**
  * 
  */
-public class Pilot extends Employee {
+public class Pilot extends Employee implements Serializable {
 
     private double flightingHours;
     private String rank;

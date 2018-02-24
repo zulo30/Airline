@@ -1,0 +1,70 @@
+Jose Maria Cordova
+MDE
+3
+COLOMBIA
+MEDELLIN
+true
+
+Olaya Herrera
+EOH
+2
+COLOMBIA
+MEDELLIN
+true
+
+El Dorado
+BOG
+3
+COLOMBIA
+BOGOTA
+true
+
+La Aurora
+GUA
+1
+GAUATEMALA
+GUATAMALA CITY
+true
+
+Fort Lauderdale
+FLL
+3
+EEUU
+FLORIDA
+true
+
+Charles de Gaulle
+CDG
+3
+FRANCIA
+PARIS
+true
+
+John F. Kennedy
+JFK
+3
+EEUU
+NEW YORK
+true
+
+NARITA
+NRT
+3
+JAPON
+TOKYO
+true
+
+Oliver Reginald Tambo
+JNB
+3
+SUDAFRICA
+JOHANNESBURGO
+true
+
+L.A. International Airport
+LAX
+3
+EEUU
+LOS ANGELES
+true
+

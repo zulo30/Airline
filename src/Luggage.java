@@ -1,10 +1,10 @@
 
 import java.util.*;
-
+import java.io.*;
 /**
  * 
  */
-public class Luggage {
+public class Luggage implements Serializable {
 
     
 

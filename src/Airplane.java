@@ -1,11 +1,14 @@
 
 import java.util.*;
+import java.io.*;
 
-public class Airplane {
+
+public class Airplane implements Serializable{
 
 	private String plate;
     private int capacity;
     private boolean isAvailable;
+    private int state; 
     private int flightHours;
 
     //constructor 
@@ -14,10 +17,21 @@ public class Airplane {
 		this.plate = plate;
 		this.capacity = capacity;
 		this.flightHours = flightHours;
+		state= 0;
 		isAvailable = true;
 	}
     
-    //getters & setters
+    
+
+	//getters & setters
+    public int getState() {
+		return state;
+	}
+
+	public void setState(int state) {
+		this.state = state;
+	}
+	
 	public String getPlate() {
 		return plate;
 	}

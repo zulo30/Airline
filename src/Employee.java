@@ -1,10 +1,10 @@
 
 import java.util.*;
-
+import java.io.*;
 /**
  * 
  */
-public class Employee extends Person {
+public class Employee extends Person implements Serializable{
 
    
 	protected double wage;
